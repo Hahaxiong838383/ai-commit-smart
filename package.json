@@ -1,0 +1,35 @@
+{
+  "name": "ai-commit-smart",
+  "version": "0.1.0",
+  "description": "Generate conventional commit messages from staged git diff using Claude CLI",
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "bin": {
+    "ai-commit": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/index.ts"
+  },
+  "keywords": [
+    "git",
+    "commit",
+    "conventional-commits",
+    "cli",
+    "claude"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "files": [
+    "dist",
+    "README.md",
+    "assets"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.17.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
